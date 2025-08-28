@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(Color(0xFFE0F7FA)), // Fundo azul claro
+                        .background(Color(0xFFE0F7FA)), 
                     color = Color.Transparent
                 ) {
                     CalculadoraIMCScreen()
@@ -55,7 +55,7 @@ fun CalculadoraIMCScreen() {
     ) {
         // Logo
         Image(
-            painter = painterResource(id = R.drawable.logo_imc), // coloque logo_imc.png em res/drawable
+            painter = painterResource(id = R.drawable.logo_imc),
             contentDescription = "Logo IMC",
             modifier = Modifier
                 .size(100.dp)
@@ -69,7 +69,7 @@ fun CalculadoraIMCScreen() {
             modifier = Modifier.padding(bottom = 24.dp)
         )
 
-        // Campo Peso
+        // Peso
         OutlinedTextField(
             value = peso,
             onValueChange = { peso = it },
@@ -85,7 +85,7 @@ fun CalculadoraIMCScreen() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Campo Altura
+        // Altura
         OutlinedTextField(
             value = altura,
             onValueChange = { altura = it },
@@ -101,7 +101,7 @@ fun CalculadoraIMCScreen() {
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Botão calcular
+        // Botão 
         Button(
             onClick = {
                 val pesoFormatado = peso.replace(',', '.')
