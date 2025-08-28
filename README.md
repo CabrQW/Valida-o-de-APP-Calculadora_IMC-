@@ -1,4 +1,4 @@
-# Calculadora de IMC (Jetpack Compose)
+# Calculadora de IMC
 
 Este app calcula o Índice de Massa Corporal (IMC) com base no peso e altura informados.
 
